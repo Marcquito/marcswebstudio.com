@@ -42,7 +42,7 @@ const settings = {
       "state": {
         "source": {
           "url": "https://wordpress-103378-1418869.cloudwaysapps.com/",
-          "homepage": "/home",
+          "homepage": "/",
           "postsPage": "/blog",
         }
       }
