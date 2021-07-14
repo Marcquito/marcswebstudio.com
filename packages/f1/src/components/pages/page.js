@@ -45,6 +45,8 @@ const ArticleContainer = styled.div`
   .post-title {
     text-align:center;    
   }
+  padding-top: 200px;
+  padding-bottom: 100px;
 `;
 
 const Title = styled.h1`
@@ -62,6 +64,8 @@ const Content = styled.div`
     max-width: 1035px;
     width: 100%;
     margin:0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   p {

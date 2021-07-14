@@ -24,6 +24,18 @@ const HomePage = ({ state, actions, libraries }) => {
   // Load the post, but only if the data is ready.
   return data.isReady ? (        
     <Content>
+      <div className="jumbotron">
+        <div className="container">
+          <div className="col-lg-8">
+            <h1>Hi, I'm Marc R. Miller</h1>
+            <h2>The finest rogue web developer, designer, and marketing extraordinaire based out of Atlanta, GA 👨🏻‍💻</h2>
+            <br />
+            <a href="/portfolio/" className="btn-blue">View Portfolio</a>
+            <br />
+          </div>
+        </div>
+      </div>
+
       <Html2React html={homepage.content.rendered} />
     </Content>
   ) : null;
@@ -38,6 +50,22 @@ const Container = styled.div`
 const Content = styled.div`
 width: 100%;
 position:relative;
+
+.jumbotron{
+  background: linear-gradient( 
+    170deg
+    ,rgb(0 0 0 / 70%) 0%,rgb(43 43 99 / 70%) 55%,rgb(0 0 0 / 70%) 100%),url(https://wordpress-103378-1418869.cloudwaysapps.com/wp-content/uploads/2021/06/marcs-web-studio-atlanta-ga-scaled.jpg);
+  background-size: cover;
+  background-repeat; no-repeat;
+  padding: 23em 0 15em;
+}
+
+.jumbotron h1{
+  font-size: 4em;
+}
+.jumbotron h1, .jumbotron h2{
+  color: white;
+}
 .wp-block-group__inner-container {
   width: 100%;
   max-width: 1200px;
@@ -80,6 +108,20 @@ position:relative;
       }
     }
   }
+}
+
+.btn-blue{
+  background: #667eea;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 1px solid white;
+  margin: 20px 0;
+}
+.btn-blue:hover{
+  background: transparent;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
 .home-services {
@@ -139,7 +181,7 @@ position:relative;
               background-color: var(--brand);
               border-radius: 50%;
               left: 0;
-              top: 5px;
+              top: 0;
               width: 30px;
               height: 30px;
               text-align: center;
@@ -252,6 +294,9 @@ position:relative;
         color: rgb(69 78 86);
       }
     }
+  }
+  .more-posts-button{
+    text-align: center;
   }
 }
 `;

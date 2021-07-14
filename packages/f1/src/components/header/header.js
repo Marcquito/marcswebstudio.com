@@ -9,7 +9,7 @@ const Header = ({ state }) => {
     <>
       <BrandContainer>
         <StyledLink link="/">
-          <Title><span>F1</span> by awsm</Title>
+          <Title><img class="mws-logo" alt="Marc's Web Studio: Atlanta, GA" src="https://wordpress-103378-1418869.cloudwaysapps.com/wp-content/uploads/2020/08/mws-logo-v1-full.png"></img></Title>
         </StyledLink>
         <MobileMenu />
       </BrandContainer>
@@ -29,6 +29,10 @@ const BrandContainer = styled.div`
     display: flex;
     width: auto;
   }
+  .mws-logo{
+    width: 250px; 
+    height: auto;
+  }
 `;
 
 const Title = styled.div`
@@ -44,6 +48,6 @@ const StyledLink = styled(Link)`
   color:var(--brand);
   transition: all 0.3s ease;
   &:hover {
-    color:var(--black);
+    color:var(--mwsblue);
   }
 `;

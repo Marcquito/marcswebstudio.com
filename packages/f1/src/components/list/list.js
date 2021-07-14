@@ -75,8 +75,10 @@ export default connect(List);
 const Container = styled.section`
   width: 1200px;
   margin: 0 auto;
+  padding-top: 200px;
   padding-right: 15px;
   padding-left: 15px;
+  padding-bottom: 100px;
   list-style: none;
 `;
 

@@ -29,32 +29,33 @@ const Item = ({ state, item }) => {
         {state.theme.featured.showOnList && (
           <FeaturedMedia id={item.featured_media} />
         )}
+        <div className="list-item-container">
+          <div className="bio-info">
+            {/* If the post has an author, we render a clickable author text. */}
+            {author && (
+              <StyledLink link={author.link}>
+                <Image src={author.avatar_urls['48']} alt={author.name} />
+                <AuthorName>
+                  <b>{author.name}</b>
+                </AuthorName>
+              </StyledLink>
+            )}
+            <PublishDate>
+              {" "}
+              {date.toDateString()}
+            </PublishDate>
+          </div>
 
-        <div className="bio-info">
-          {/* If the post has an author, we render a clickable author text. */}
-          {author && (
-            <StyledLink link={author.link}>
-              <Image src={author.avatar_urls['48']} alt={author.name} />
-              <AuthorName>
-                <b>{author.name}</b>
-              </AuthorName>
-            </StyledLink>
+          <Link className="article-title" link={item.link}>
+            <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
+          </Link>
+
+          {/* If the post has an excerpt (short summary text), we render it */}
+          {item.excerpt && (
+            <Excerpt dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
           )}
-          <PublishDate>
-            {" "}
-            {date.toDateString()}
-          </PublishDate>
+          <Link className="redmore-btn" link={item.link}>{ readMoreLabel }...</Link>
         </div>
-
-        <Link className="article-title" link={item.link}>
-          <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
-        </Link>
-
-        {/* If the post has an excerpt (short summary text), we render it */}
-        {item.excerpt && (
-          <Excerpt dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
-        )}
-        <Link className="redmore-btn" link={item.link}>{ readMoreLabel }...</Link>
         </Article>
       )}
       {isJobs && (
@@ -86,6 +87,7 @@ const Article = styled.article`
   margin:0 auto;
   position: relative;
   margin-bottom:3.5rem;
+  background: #ffffff;
   .bio-info {
     margin-bottom:1rem;
     img {
@@ -184,6 +186,9 @@ const Article = styled.article`
         box-shadow: 0 5px 20px 0 rgba(0,0,0,.23);
       }
     }
+  }
+  .list-item-container{
+    padding: 20px;
   }
 `;
 

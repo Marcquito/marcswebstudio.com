@@ -14,29 +14,25 @@ const settings = {
         "theme": {
           "menu": [
             [
-              "Home",
-              "/"
+              "About Me",
+              "/about/"
             ],
             [
-              "Nature",
-              "/category/nature/"
+              "Portfolio",
+              "/portfolio/"
             ],
             [
-              "Travel",
-              "/category/travel/"
+              "Blog",
+              "/blog/"
             ],
             [
-              "Japan",
-              "/tag/japan/"
-            ],
-            [
-              "About Us",
-              "/about-us/"
+              "Contact",
+              "/contact/"
             ]
           ],
           "featured": {
-            "showOnList": false,
-            "showOnPost": false
+            "showOnList": true,
+            "showOnPost": true
           }
         }
       }
@@ -45,7 +41,9 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
+          "url": "https://wordpress-103378-1418869.cloudwaysapps.com/",
+          "homepage": "/home",
+          "postsPage": "/blog",
         }
       }
     },

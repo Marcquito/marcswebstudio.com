@@ -43,14 +43,14 @@ const Theme = ({ state }) => {
       <HeadContainer>
         <Header />
       </HeadContainer>
-
+      
       {/* Add the main section. It renders a different component depending
       on the type of URL we are in. */}
       <Main>
         <Switch>
           <Loading when={data.isFetching} />
           <List when={data.isArchive} />
-          <HomePage when={data.isHome} /> 
+          <HomePage when={data.isHome} />
           <Jobs when={data.isAwsmJobOpenings} />
           <Page when={data.isPage} />
           <Post when={data.isPostType} />
@@ -67,8 +67,10 @@ const Theme = ({ state }) => {
 export default connect(Theme);
 
 const globalStyles = css`
+  @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Roboto&display=swap');
   :root {
-    --brand: #5B3BE8;
+    --brand: #333333;
+    --mwsblue: #667eea;
     --black: #000000;
     --white: #ffffff;
     --bodycolor: #343434;
@@ -76,8 +78,8 @@ const globalStyles = css`
   body {
     margin: 0;
     color:var(--bodycolor);
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-feature-settings: "kern";
     -webkit-font-smoothing: antialiased;
     min-height: -webkit-fill-available;
@@ -93,7 +95,9 @@ const globalStyles = css`
     }
   }
   h1, h2, h3, h4, h5, h6 {
-    color:var(--black);
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    color:var(--mwsblue);
   }
   p {
     line-height:24px;
@@ -118,26 +122,43 @@ const globalStyles = css`
       padding: 50px 0;
     }
   }
+  .marcs-main-button-blue {
+    border-radius: 50px!important;
+    border: 2px solid #fff!important;
+    color: #fff;
+    background-color: #667eea;
+    width: 100%;
+    background-size: 120% 100%;
+    transition: all .4s ease-in-out;
+    margin: 3px 0;
+    padding: 8px 8px;
+}
 `;
 
 const HeadContainer = styled.div`
   display: flex;
   width:100%;
-  max-width:1200px;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 2.75rem;
+  padding-top: 1rem;
   padding-right: 15px;
   padding-left: 15px;
-  padding-bottom:6.25rem;
+  padding-bottom:1.5rem;
+
+  position: fixed;
+  z-index: 999;
+  background: rgb(255 255 255 / 90%);
+
 `;
 const FooterContainer = styled.div`
   width:100%;
-  background:var(--brand);
-  // margin-top: auto;
+  //background:var(--brand);
+  background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(10,10,10,1) 0%, rgba(51,51,51,1) 81.3% );
+  //margin-top: auto;
 `;
 
 const Main = styled.div`
   display: flex;
   justify-content: center;
+  background: #f9f9f9;
 `;
