@@ -3,8 +3,8 @@ const settings = {
   "state": {
     "frontity": {
       "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
+      "title": "Marc's Web Studio",
+      "description": "Atlanta, GA's best web developer, user experience designer, and marketer."
     }
   },
   "packages": [
@@ -42,11 +42,16 @@ const settings = {
       "state": {
         "source": {
           "url": "https://wordpress-103378-1418869.cloudwaysapps.com/",
-          "homepage": "/",
+          "homepage": "/home",
           "postsPage": "/blog",
+          gfAuth: {
+            key: "ck_f4f2930bf10635ab0474eef9395d538faf4a29c6",
+            secret: "cs_beda8b1ff0f1ae86cd19144269954164aba0d1ff",
+          }
         }
       }
     },
+    "@aamodtgroup/frontity-gravity-forms",
     "@frontity/tiny-router",
     "@frontity/html2react"
   ]

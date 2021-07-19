@@ -6,9 +6,33 @@ import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter";
 import { FaHandPointRight } from "@react-icons/all-files/fa/FaHandPointRight";
+
+const normalizeGravityFormsResponse = (response) => {
+  // Provided already as a boolean in the response
+  const isSuccess = response.is_valid;
+  const message = isSuccess
+    ? // Comes wrapped in a HTML and we likely don't need that
+      stripHtml(response.confirmation_message)
+    : // No general error message, so we set a fallback
+      'There was a problem with your submission.';
+  const validationError = isSuccess
+    ? {}
+    : // We replace the keys with the prefixed version;
+      // this way the request and response matches
+      Object.fromEntries(
+        Object.entries(
+            response.validation_messages
+        ).map(([key, value]) => [`input_${key}`, value])
+      );
+
+  return {
+    isSuccess,
+    message,
+    validationError,
+  };
+};
  
 // simplest form (only email)
-
 
 const Footer = ({ state }) => {
   // const options = state.source.get("acf-options-page");
@@ -65,12 +89,15 @@ const Footer = ({ state }) => {
           <div className="col-lg-3 col-md-6 footer-widget widget-three">
             <h4 className="widget-title">Contact</h4>
             <p>Fill out the form below. I'll be in touch with you as quickly as possible, usually within 24 hours or less.</p><br />
-            <form id="form" class="topBefore" action="https://wordpress-103378-1418869.cloudwaysapps.com//wp-json/gf/v2/forms/1/submissions" method="post">
+            
+            <div className="gf-validation">{normalizeGravityFormsResponse.response}</div>
+            <form id="form" class="topBefore" action="https://wordpress-103378-1418869.cloudwaysapps.com/wp-json/gf/v2/forms/1/submissions" method="post">
               <input id="name" type="text" name="input_2" placeholder="What's your name?" required></input>
               <input id="email" type="text" name="input_3" placeholder="What's your email?" required></input>
               <textarea id="message" type="text" name="input_4" placeholder="Type your message here!" required></textarea>
               <input id="submit" type="submit" value="LET'S GO!"></input>
             </form>
+
           </div>
         </div>
         

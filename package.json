@@ -17,6 +17,7 @@
   },
   "prettier": {},
   "dependencies": {
+    "@aamodtgroup/frontity-gravity-forms": "^0.1.5",
     "@awsmin/f1": "./packages/f1",
     "@frontity/core": "^1.14.3",
     "@frontity/html2react": "^1.7.0",
