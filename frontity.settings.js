@@ -41,12 +41,12 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://wordpress-103378-1418869.cloudwaysapps.com/",
+          "url": "https://admin.marcswebstudio.com/",
           "homepage": "/home",
           "postsPage": "/blog",
           gfAuth: {
-            key: "ck_f4f2930bf10635ab0474eef9395d538faf4a29c6",
-            secret: "cs_beda8b1ff0f1ae86cd19144269954164aba0d1ff",
+            key: "ck_557ec37925c30877b22adf57991df3fe2c374ee2",
+            secret: "cs_ce6a2c78bedad39d19ec24e1cc6bb92ee7370685",
           }
         }
       }

@@ -133,6 +133,16 @@ const globalStyles = css`
     margin: 3px 0;
     padding: 8px 8px;
 }
+/* Gravity Forms */
+#gform_fields_1,{
+  list-style-type: none;
+}
+#gform_1 label{
+  display: none;
+}
+#gform_1 li{
+  padding: 10px 0;
+}
 `;
 
 const HeadContainer = styled.div`

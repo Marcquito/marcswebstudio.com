@@ -35,6 +35,13 @@ const HomePage = ({ state, actions, libraries }) => {
           </div>
         </div>
       </div>
+      <div className="homepage-posts">
+        <div className="container">
+          <div className="col-lg-8">
+            
+          </div>
+        </div>
+      </div>
 
       <Html2React html={homepage.content.rendered} />
     </Content>
