@@ -44,4 +44,5 @@ const StyledImage = styled(Image)`
   max-height:400px;
   width: 100%;
   object-fit:cover;
+  border-radius: 10px 10px 0 0;
 `;

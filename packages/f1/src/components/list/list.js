@@ -6,10 +6,11 @@ import Pagination from "./pagination";
 const List = ({ state }) => {
   // Get the data of the current list.
   const data = state.source.get(state.router.link);
-  let title = 'Blog';
-  if ( data.isAwsmJobOpeningsArchive ) {
+  let title = 'Blog, Tutorials, Updates';
+  if ( data.isAwsmJobOpeningsArchive, data.isPortfolioArchive ) {
     title = 'Career';
-  }
+    title = 'Portfolio';
+  };
 
   return (
     <Container>

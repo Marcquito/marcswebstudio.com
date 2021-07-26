@@ -42,6 +42,6 @@ const Container = styled.div`
   align-items: center;
 
   & > * {
-    margin-top: 64px;
+    margin-top: 164px;
   }
 `;

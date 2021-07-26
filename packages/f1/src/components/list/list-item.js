@@ -87,7 +87,13 @@ const Article = styled.article`
   margin:0 auto;
   position: relative;
   margin-bottom:3.5rem;
-  background: #ffffff;
+
+  // Modifying the blog list look...
+  background: #333333;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 15px 55px -20px #667eea;
+
   .bio-info {
     margin-bottom:1rem;
     img {
@@ -98,15 +104,23 @@ const Article = styled.article`
   .article-title {    
     &:hover {
       h1 {
-        color:var(--brand);
+        //color:var(--brand);
       }
     }
   }
   .redmore-btn {
-    color:var(--brand);
-    transition: all .3s ease;
+    //color:var(--brand);
+    //transition: all .3s ease;
+
+    background: #667eea;
+    border-radius: 100px;
+    padding: 10px 15px;
+    box-shadow: 0px 5px 30px -10px #667eea;
+    color: #ffffff;
+
     &:hover {
-      color:var(--black);
+      //color:var(--black);
+      background: transparent;
     }
   }
   /**Job articles**/
@@ -195,13 +209,15 @@ const Article = styled.article`
 const Title = styled.h1`
   font-size: 2rem;
   margin-bottom:1.5rem;
-  color: var(--black);
+  //color: var(--black);
+  color: #ffffff;
   box-sizing: border-box;
   transition: all .3s ease;
 `;
 
 const AuthorName = styled.span`
-  color: var(--black);
+  //color: var(--black);
+  color: #ffffff;
   font-size: 1rem;
   margin-right:1rem;
 `;

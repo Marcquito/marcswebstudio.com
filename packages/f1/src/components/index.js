@@ -87,6 +87,9 @@ const globalStyles = css`
   html {
     height: -webkit-fill-available;
   },
+  p a{
+    padding: 0 1px!important;
+  }
   a,
   a:visited {  
     text-decoration: none;
@@ -101,7 +104,6 @@ const globalStyles = css`
   }
   p {
     line-height:24px;
-    font-size:18px;
   }
   // #root {
   //   display:flex;
@@ -137,11 +139,33 @@ const globalStyles = css`
 #gform_fields_1,{
   list-style-type: none;
 }
+#gform_1{
+  box-shadow: 0px 10px 20px -10px #000;
+  background-image: linear-gradient(to right,#667eea,#764ba2,#6B8DD6,#8E37D7);
+  -webkit-background-size: 584% 100%;
+  background-size: 584% 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+}
 #gform_1 label{
   display: none;
 }
 #gform_1 li{
   padding: 10px 0;
+}
+
+// For any images in a li
+li img{
+  max-width: 400px!important;
+  height: auto!important;
+  position: relative!important;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px -2px #667eea;
+  margin: 30px 0!important;
+}
+li span{
+  padding-bottom: 0!important;
+  text-align: center;
 }
 `;
 

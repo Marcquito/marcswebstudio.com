@@ -47,7 +47,35 @@ const settings = {
           gfAuth: {
             key: "ck_557ec37925c30877b22adf57991df3fe2c374ee2",
             secret: "cs_ce6a2c78bedad39d19ec24e1cc6bb92ee7370685",
-          }
+          },
+          api: "https://admin.marcswebstudio.com/wp-json",
+          postTypes: [
+            {
+              type: "portfolio-content",
+              endpoint: "portfolio-content",
+              archive: "portfolio"
+            }
+          ],
+          taxonomies: [
+            {
+              taxonomy: "portfolio-tag",
+              endpoint: "portfolio-tag",
+              postTypeEndpoint: "portfolio-tag",
+              params: {
+                per_page: 5,
+                _embed: true,
+              },
+            },
+            {
+              taxonomy: "portfolio-category",
+              endpoint: "portfolio-category",
+              postTypeEndpoint: "portfolio-category",
+              params: {
+                per_page: 5,
+                _embed: true,
+              }
+            }
+          ]
         }
       }
     },
