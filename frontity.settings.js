@@ -2,7 +2,7 @@ const settings = {
   "name": "marcswebstudio",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.org",
+      "url": "https://admin.marcswebstudio.com",
       "title": "Marc's Web Studio",
       "description": "Atlanta, GA's best web developer, user experience designer, and marketer."
     }
