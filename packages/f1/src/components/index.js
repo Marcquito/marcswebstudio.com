@@ -102,6 +102,9 @@ const globalStyles = css`
     font-weight: 700;
     color:var(--mwsblue);
   }
+  h1{
+    font-size: 4em;
+  }
   p {
     line-height:24px;
   }
@@ -166,6 +169,15 @@ li img{
 li span{
   padding-bottom: 0!important;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 3em!important;
+  }
+  h2{
+    font-size: 1.5em!important;
+  }
 }
 `;
 

@@ -66,10 +66,6 @@ position:relative;
   background-repeat; no-repeat;
   padding: 18em 0 15em;
 }
-
-.jumbotron h1{
-  font-size: 4em;
-}
 .jumbotron h1, .jumbotron h2{
   color: white;
 }
