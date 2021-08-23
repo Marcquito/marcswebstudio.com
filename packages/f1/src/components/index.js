@@ -172,10 +172,10 @@ li span{
 }
 
 @media only screen and (max-width: 600px) {
-  h1{
+  .jumbotron h1, .header{
     font-size: 3em!important;
   }
-  h2{
+  .jumbotron h2{
     font-size: 1.5em!important;
   }
 }
