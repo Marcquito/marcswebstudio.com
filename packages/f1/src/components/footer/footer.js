@@ -67,7 +67,7 @@ const Footer = ({ state }) => {
         <div className="row">
           <div className="col-12 col-lg-6 footer-widget widget-one">
             <h4 className="widget-title">About Me</h4>
-            <img className="about-me-image" src="https://wordpress-103378-1418869.cloudwaysapps.com/wp-content/uploads/2021/06/marcandenzo.jpg"></img>
+            <img className="about-me-image" src="https://admin.marcswebstudio.com/wp-content/uploads/2021/07/marcandenzo.jpg"></img>
             <p>
               <strong>My name is Marc R. Miller and I'm a full-stack web developer based out of Atlanta, GA.</strong><br />
               <br />
@@ -91,7 +91,7 @@ const Footer = ({ state }) => {
             <p>Fill out the form below. I'll be in touch with you as quickly as possible, usually within 24 hours or less.</p><br />
             
             <div className="gf-validation">{normalizeGravityFormsResponse.response}</div>
-            <form id="form" class="topBefore" action="https://wordpress-103378-1418869.cloudwaysapps.com/wp-json/gf/v2/forms/1/submissions" method="post">
+            <form id="form" class="topBefore" action="https://admin.marcswebstudio.com/wp-json/gf/v2/forms/1/submissions" method="post">
               <input id="name" type="text" name="input_2" placeholder="What's your name?" required></input>
               <input id="email" type="text" name="input_3" placeholder="What's your email?" required></input>
               <textarea id="message" type="text" name="input_4" placeholder="Type your message here!" required></textarea>

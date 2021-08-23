@@ -9,7 +9,7 @@ const Header = ({ state }) => {
     <>
       <BrandContainer>
         <StyledLink link="/">
-          <Title><img class="mws-logo" alt="Marc's Web Studio: Atlanta, GA" src="https://wordpress-103378-1418869.cloudwaysapps.com/wp-content/uploads/2020/08/mws-logo-v1-full.png"></img></Title>
+          <Title><img class="mws-logo" alt="Marc's Web Studio: Atlanta, GA" src="https://admin.marcswebstudio.com/wp-content/uploads/2021/07/mws-logo-v1-full.png"></img></Title>
         </StyledLink>
         <MobileMenu />
       </BrandContainer>

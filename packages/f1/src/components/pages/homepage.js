@@ -61,10 +61,10 @@ position:relative;
 .jumbotron{
   background: linear-gradient( 
     170deg
-    ,rgb(0 0 0 / 70%) 0%,rgb(43 43 99 / 70%) 55%,rgb(0 0 0 / 70%) 100%),url(https://wordpress-103378-1418869.cloudwaysapps.com/wp-content/uploads/2021/06/marcs-web-studio-atlanta-ga-scaled.jpg);
+    ,rgb(0 0 0 / 70%) 0%,rgb(43 43 99 / 70%) 55%,rgb(0 0 0 / 70%) 100%),url(https://admin.marcswebstudio.com/wp-content/uploads/2021/07/marcs-web-studio-atlanta-ga-scaled.jpg);
   background-size: cover;
   background-repeat; no-repeat;
-  padding: 23em 0 15em;
+  padding: 18em 0 15em;
 }
 
 .jumbotron h1{
