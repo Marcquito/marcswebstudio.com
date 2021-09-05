@@ -22,7 +22,7 @@ const Footer = ({ state }) => {
           <div className="footertop-container">
             <div className="row">
               <div className="connect-title col-lg-6 col-sm-12">
-                <h4>Stuff I'm good at!  <i>< FaHandPointRight /></i></h4>
+                <h4>Stuff I'm Great At!  <i>< FaHandPointRight /></i></h4>
               </div>
               <div className="col-lg-6 col-sm-12">
                 <div className="good-at-stuff">

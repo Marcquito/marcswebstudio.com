@@ -5,7 +5,7 @@ const description404 = (
   <>
     That page can’t be found{" "}
     <span role="img" aria-label="confused face">
-      😕
+    🤮
     </span>
   </>
 );
@@ -23,7 +23,7 @@ const Page404 = ({ state }) => {
   const data = state.source.get(state.router.link);
 
   const title = "Oops! Something went wrong";
-  const title404 = "Oops! 404";
+  const title404 = "🤢 404";
 
   return (
     <Container>
@@ -44,8 +44,8 @@ const Container = styled.div`
 
 const Title = styled.h1`
   margin: 0;
-  margin-top: 24px;
-  margin-bottom: 8px;
+  margin-top: 200px;
+  margin-bottom: 100px;
   color: rgba(12, 17, 43);
   font-size: 4em;
 `;
