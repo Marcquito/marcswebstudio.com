@@ -48,7 +48,7 @@ const settings = {
             key: "ck_95bd94a04b5156f0850509f7dbe0719cb54eaa58",
             secret: "cs_7023ff32e1b6b4752be5b83af2537a3cf0f4c328",
           },
-          api: "https://admin.marcswebstudio.com/wp-json",
+          api: "https://admin.marcswebstudio.com/wp-json/",
           postTypes: [
             {
               type: "portfolio-content",
