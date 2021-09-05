@@ -45,8 +45,8 @@ const settings = {
           "homepage": "/home",
           "postsPage": "/blog",
           gfAuth: {
-            key: "ck_557ec37925c30877b22adf57991df3fe2c374ee2",
-            secret: "cs_ce6a2c78bedad39d19ec24e1cc6bb92ee7370685",
+            key: "ck_95bd94a04b5156f0850509f7dbe0719cb54eaa58",
+            secret: "cs_7023ff32e1b6b4752be5b83af2537a3cf0f4c328",
           },
           api: "https://admin.marcswebstudio.com/wp-json",
           postTypes: [

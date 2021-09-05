@@ -13,33 +13,6 @@ import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter";
 import { FaHandPointRight } from "@react-icons/all-files/fa/FaHandPointRight";
 
-const normalizeGravityFormsResponse = (response) => {
-  // Provided already as a boolean in the response
-  const isSuccess = response.is_valid;
-  const message = isSuccess
-    ? // Comes wrapped in a HTML and we likely don't need that
-      stripHtml(response.confirmation_message)
-    : // No general error message, so we set a fallback
-      'There was a problem with your submission.';
-  const validationError = isSuccess
-    ? {}
-    : // We replace the keys with the prefixed version;
-      // this way the request and response matches
-      Object.fromEntries(
-        Object.entries(
-            response.validation_messages
-        ).map(([key, value]) => [`input_${key}`, value])
-      );
-
-  return {
-    isSuccess,
-    message,
-    validationError,
-  };
-};
- 
-// simplest form (only email)
-
 const Footer = ({ state }) => {
   // const options = state.source.get("acf-options-page");
   return (
