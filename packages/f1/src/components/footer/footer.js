@@ -1,6 +1,12 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "../link";
+import { FaHtml5 } from "@react-icons/all-files/fa/FaHtml5";
+import { FaCss3 } from "@react-icons/all-files/fa/FaCss3";
+import { FaPhp } from "@react-icons/all-files/fa/FaPhp";
+import { FaJs } from "@react-icons/all-files/fa/FaJs";
+import { FaReact } from "@react-icons/all-files/fa/FaReact";
+import { FaWordpress } from "@react-icons/all-files/fa/FaWordpress";
 import { FaSlack } from "@react-icons/all-files/fa/FaSlack";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
@@ -43,21 +49,15 @@ const Footer = ({ state }) => {
           <div className="footertop-container">
             <div className="row">
               <div className="connect-title col-lg-6 col-sm-12">
-                <h4>Let's Connect!  <i>< FaHandPointRight /></i></h4>
+                <h4>Stuff I'm good at!  <i>< FaHandPointRight /></i></h4>
               </div>
               <div className="col-lg-6 col-sm-12">
-                <a className="tw-ic" href="https://twitter.com/MarcReymon" target="_blank">
-                  <i>< FaTwitter /></i>
-                </a>
-                <a className="ins-ic" href="https://www.instagram.com/marcrmiller/" target="_blank">
-                    <i>< FaInstagram /></i>
-                </a>
-                <a className="li-ic" href="https://www.linkedin.com/in/marcreymon/" target="_blank">
-                  <i>< FaLinkedinIn /></i>
-                </a>
-                <a className="li-ic" href="https://join.slack.com/t/marcswebstudio/shared_invite/enQtNzkyMzgzOTM2NzM4LWJmODFkMzVkMmU3ZGViNTczNjFlYmUzMDFlN2FjMTAxMWQzZjRjMWZlMmYwYjA3OWE0NzRlYWJlN2ZlNGE0Y2U" target="_blank">
-                  <i>< FaSlack /></i>
-                </a>
+                  <i>< FaHtml5 /></i>
+                  <i>< FaCss3 /></i>
+                  <i>< FaPhp /></i>
+                  <i>< FaJs /></i>
+                  <i>< FaReact /></i>
+                  <i>< FaWordpress /></i>
               </div>
             </div>
           </div>
@@ -87,17 +87,30 @@ const Footer = ({ state }) => {
             </ul>
           </div>
           <div className="col-lg-3 col-md-6 footer-widget widget-three">
-            <h4 className="widget-title">Contact</h4>
-            <p>Fill out the form below. I'll be in touch with you as quickly as possible, usually within 24 hours or less.</p><br />
-            
-            <div className="gf-validation">{normalizeGravityFormsResponse.response}</div>
+            <h4 className="widget-title">Let's Connect!</h4>
+              <div className="lets-connect">
+                <a className="tw-ic" href="https://twitter.com/MarcReymon" target="_blank">
+                  <i>< FaTwitter /></i>
+                </a>
+                <a className="ins-ic" href="https://www.instagram.com/marcrmiller/" target="_blank">
+                    <i>< FaInstagram /></i>
+                </a>
+                <a className="li-ic" href="https://www.linkedin.com/in/marcreymon/" target="_blank">
+                  <i>< FaLinkedinIn /></i>
+                </a>
+                <a className="li-ic" href="https://join.slack.com/t/marcswebstudio/shared_invite/enQtNzkyMzgzOTM2NzM4LWJmODFkMzVkMmU3ZGViNTczNjFlYmUzMDFlN2FjMTAxMWQzZjRjMWZlMmYwYjA3OWE0NzRlYWJlN2ZlNGE0Y2U" target="_blank">
+                  <i>< FaSlack /></i>
+                </a>
+              </div>
+            { /* <div className="gf-validation">{normalizeGravityFormsResponse.response}</div> */}
+            { /*
             <form id="form" class="topBefore" action="https://admin.marcswebstudio.com/wp-json/gf/v2/forms/1/submissions" method="post">
               <input id="name" type="text" name="input_2" placeholder="What's your name?" required></input>
               <input id="email" type="text" name="input_3" placeholder="What's your email?" required></input>
               <textarea id="message" type="text" name="input_4" placeholder="Type your message here!" required></textarea>
               <input id="submit" type="submit" value="LET'S GO!"></input>
             </form>
-
+            */ }
           </div>
         </div>
         
@@ -165,7 +178,14 @@ const Container = styled.footer`
     box-shadow: 5px 5px 75px -10px #000;
   }
 
-  
+  .lets-connect a i{
+    font-size: 1.3em;
+    margin: 0 5px;
+    background-color: #fff;
+    padding: .3em .40em;
+    border-radius: 100px;
+    box-shadow: 4px 4px 20px -5px #000;
+  }
 
 
 
@@ -364,6 +384,10 @@ const FooterTop = styled.div`
   padding: .5em .65em;
   border-radius: 100px;
   box-shadow: 4px 4px 20px -5px #000;
+}
+.footertop-container i{
+  font-size: 2.2em;
+  padding: 10px;
 }
 .connect-title h4{
   color: #ffffff;

@@ -41,12 +41,12 @@ const Page = ({ state, actions, libraries }) => {
 export default connect(Page);
 
 const ArticleContainer = styled.div`
-  width:100%;
+  width: 100%;
+  max-width: 1000px;
+  padding: 150px 20px 100px;
   .post-title {
     text-align:center;    
   }
-  padding-top: 200px;
-  padding-bottom: 100px;
 `;
 
 const Title = styled.h1`
@@ -61,11 +61,13 @@ const Content = styled.div`
   word-break: break-word;  
   
   * {
+    /*
     max-width: 1035px;
     width: 100%;
     margin:0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    */
   }
 
   p {

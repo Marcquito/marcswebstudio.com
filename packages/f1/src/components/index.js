@@ -147,7 +147,8 @@ const globalStyles = css`
   background-image: linear-gradient(to right,#667eea,#764ba2,#6B8DD6,#8E37D7);
   -webkit-background-size: 584% 100%;
   background-size: 584% 100%;
-  padding: 10px 0;
+  padding: 10px 20px;
+  margin-bottom: 50px;
   border-radius: 10px;
 }
 #gform_1 label{
@@ -156,7 +157,12 @@ const globalStyles = css`
 #gform_1 li{
   padding: 10px 0;
 }
-
+#gform_fields_1{
+  padding-left: 0!important;
+}
+#input_1_4{
+  height: 10rem;
+}
 // For any images in a li
 li img{
   max-width: 400px!important;

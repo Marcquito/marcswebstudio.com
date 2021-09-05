@@ -66,8 +66,9 @@ const Post = ({ state, actions, libraries }) => {
 export default connect(Post);
 
 const ArticleContainer = styled.div`
-  width:100%;
-  padding: 200px 0 100px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 150px 20px 100px;
   .post-title {
     text-align:center;    
   }
