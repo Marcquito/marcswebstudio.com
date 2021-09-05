@@ -25,12 +25,14 @@ const Footer = ({ state }) => {
                 <h4>Stuff I'm good at!  <i>< FaHandPointRight /></i></h4>
               </div>
               <div className="col-lg-6 col-sm-12">
+                <div className="good-at-stuff">
                   <i>< FaHtml5 /></i>
                   <i>< FaCss3 /></i>
                   <i>< FaPhp /></i>
                   <i>< FaJs /></i>
                   <i>< FaReact /></i>
                   <i>< FaWordpress /></i>
+                </div>
               </div>
             </div>
           </div>
@@ -154,10 +156,10 @@ const Container = styled.footer`
   .lets-connect a i{
     font-size: 1.3em;
     margin: 0 5px;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: .3em .40em;
     border-radius: 100px;
-    box-shadow: 4px 4px 20px -5px #000;
+    /* box-shadow: 4px 4px 20px -5px #000; */
   }
 
 
@@ -358,9 +360,14 @@ const FooterTop = styled.div`
   border-radius: 100px;
   box-shadow: 4px 4px 20px -5px #000;
 }
-.footertop-container i{
+.good-at-stuff i{
   font-size: 2.2em;
-  padding: 10px;
+  margin: 0 5px;
+  background-color: #333333;
+  padding: .3em .40em;
+  border-radius: 100px;
+  box-shadow: 4px 4px 20px -5px #000;
+  color: #ffffff;
 }
 .connect-title h4{
   color: #ffffff;
@@ -378,6 +385,16 @@ const FooterTop = styled.div`
   }
   .connect-title{
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 800px){
+  .good-at-stuff i{
+    font-size: 1.8em;
+  }
+}
+@media (max-width: 400px){
+  .good-at-stuff i{
+    font-size: 1.5em;
   }
 }
 
