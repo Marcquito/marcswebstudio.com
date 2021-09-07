@@ -158,10 +158,10 @@ const Container = styled.footer`
   .lets-connect a i{
     font-size: 1.3em;
     margin: 0 5px;
-    /* background-color: #fff; */
+    background-color: #fff;
     padding: .3em .40em;
     border-radius: 100px;
-    /* box-shadow: 4px 4px 20px -5px #000; */
+    box-shadow: 4px 4px 20px -5px #000;
   }
 
 
@@ -364,11 +364,11 @@ const FooterTop = styled.div`
 }
 .good-at-stuff i{
   font-size: 2.2em;
-  margin: 0 5px;
-  background-color: #333333;
+  margin: 0;
+  /* background-color: #333333; */
   padding: .3em .40em;
-  border-radius: 100px;
-  box-shadow: 4px 4px 20px -5px #000;
+  /* border-radius: 100px; */
+  /* box-shadow: 4px 4px 20px -5px #000; */
   color: #ffffff;
 }
 .connect-title h4{
@@ -394,7 +394,7 @@ const FooterTop = styled.div`
     font-size: 1.8em;
   }
 }
-@media (max-width: 400px){
+@media (max-width: 465px){
   .good-at-stuff i{
     font-size: 1.3em;
   }
