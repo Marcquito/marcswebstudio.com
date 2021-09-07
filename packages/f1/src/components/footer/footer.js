@@ -6,6 +6,7 @@ import { FaCss3 } from "@react-icons/all-files/fa/FaCss3";
 import { FaPhp } from "@react-icons/all-files/fa/FaPhp";
 import { FaJs } from "@react-icons/all-files/fa/FaJs";
 import { FaReact } from "@react-icons/all-files/fa/FaReact";
+import { FaGit } from "@react-icons/all-files/fa/FaGit";
 import { FaWordpress } from "@react-icons/all-files/fa/FaWordpress";
 import { FaSlack } from "@react-icons/all-files/fa/FaSlack";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
@@ -31,6 +32,7 @@ const Footer = ({ state }) => {
                   <i>< FaPhp /></i>
                   <i>< FaJs /></i>
                   <i>< FaReact /></i>
+                  <i>< FaGit /></i>
                   <i>< FaWordpress /></i>
                 </div>
               </div>
@@ -394,7 +396,7 @@ const FooterTop = styled.div`
 }
 @media (max-width: 400px){
   .good-at-stuff i{
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 }
 
