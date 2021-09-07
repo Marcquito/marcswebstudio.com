@@ -43,7 +43,7 @@ export default connect(Page);
 const ArticleContainer = styled.div`
   width: 100%;
   max-width: 1000px;
-  padding: 150px 20px 100px;
+  padding: 200px 20px 100px;
   .post-title {
     text-align:center;    
   }
@@ -51,6 +51,7 @@ const ArticleContainer = styled.div`
 
 const Title = styled.h1`
   margin-bottom: 3.2rem;
+  font-size: 3em;
 `;
 
 /**
@@ -183,13 +184,15 @@ const Content = styled.div`
     touch-action: manipulation;
     cursor: pointer;
     background-image: none;
-    border: 1px solid #1f38c5;
+    border: 1px solid #667eea;
     padding: 12px 36px;
     font-size: 14px;
     line-height: 1.42857143;
-    border-radius: 4px;
     color: var(--white);
     background-color:var(--brand);
+    border-radius: 100px;
+    margin-bottom: 10px;
+    width: 100%;
   }
 
   /* WordPress Core Align Classes */

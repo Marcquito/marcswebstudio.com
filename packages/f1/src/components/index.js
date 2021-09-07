@@ -119,7 +119,6 @@ const globalStyles = css`
   .wp-block-image span img{
     border-radius: 10px;
     box-shadow: 0px 0px 25px -2px #667eea;
-    margin: 30px 0!important;
   }
   .container {
     max-width: 1200px;

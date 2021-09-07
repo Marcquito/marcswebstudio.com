@@ -67,8 +67,8 @@ export default connect(Post);
 
 const ArticleContainer = styled.div`
   width: 100%;
-  max-width: 1000px;
-  padding: 150px 20px 100px;
+ /* max-width: 1000px; */
+  padding: 200px 20px 100px;
   .post-title {
     text-align:center;    
   }
@@ -76,6 +76,7 @@ const ArticleContainer = styled.div`
 
 const Title = styled.h1`
   margin-bottom: 1.2rem;
+  font-size: 3em;
 `;
 
 const StyledLink = styled(Link)`

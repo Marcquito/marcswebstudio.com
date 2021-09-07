@@ -119,7 +119,6 @@ position:relative;
   color: white;
   padding: 10px 20px;
   border-radius: 100px;
-  border: 1px solid white;
   margin: 20px 0;
 }
 .btn-blue:hover{

@@ -6,7 +6,7 @@ import Pagination from "./pagination";
 const List = ({ state }) => {
   // Get the data of the current list.
   const data = state.source.get(state.router.link);
-  let title = 'Welcome to the Blog';
+  let title = "Thoughts & Tutorials";
   if ( data.isAwsmJobOpeningsArchive, data.isPortfolioArchive ) {
     title = 'Career';
     title = 'Portfolio';
@@ -86,5 +86,6 @@ const Container = styled.section`
 const Header = styled.h1`
   text-align:center;
   margin-bottom:3rem;
+  font-size: 3em;
 
 `;
