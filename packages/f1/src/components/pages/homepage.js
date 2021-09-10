@@ -69,6 +69,9 @@ position:relative;
 .jumbotron h1, .jumbotron h2{
   color: white;
 }
+.jumbotron h2{
+  font-size: 2rem;
+}
 
 .wp-block-group__inner-container {
   width: 100%;

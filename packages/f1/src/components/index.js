@@ -100,16 +100,22 @@ const globalStyles = css`
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Comfortaa', cursive;
   }
-  h1, h2, h3{
+  h1, h2{
     font-weight: 700;
     color:var(--mwsblue);
   }
-  h4, h5, h6{
+  h3, h4, h5, h6{
     font-weight: 400;
-    color:#000000;
+    color: var(--bodycolor);
   }
   h1{
     font-size: 4em;
+  }
+  h2{
+    font-size: 2.5em;
+  }
+  h3{
+    font-size: 2em;
   }
   p {
     line-height:24px;
