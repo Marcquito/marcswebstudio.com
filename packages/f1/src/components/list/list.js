@@ -87,5 +87,10 @@ const Header = styled.h1`
   text-align:center;
   margin-bottom:3rem;
   font-size: 3em;
+  background: -webkit-linear-gradient(to right, #667eea,#764ba2);
+  background: -moz-linear-gradient(to right, #667eea,#764ba2);
+  background: linear-gradient(to right, #667eea,#764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
 `;

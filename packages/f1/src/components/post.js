@@ -77,6 +77,11 @@ const ArticleContainer = styled.div`
 const Title = styled.h1`
   margin-bottom: 1.2rem;
   font-size: 3em;
+  background: -webkit-linear-gradient(to right, #667eea,#764ba2);
+  background: -moz-linear-gradient(to right, #667eea,#764ba2);
+  background: linear-gradient(to right, #667eea,#764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 const StyledLink = styled(Link)`

@@ -99,8 +99,14 @@ const globalStyles = css`
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Comfortaa', cursive;
+  }
+  h1, h2, h3{
     font-weight: 700;
     color:var(--mwsblue);
+  }
+  h4, h5, h6{
+    font-weight: 400;
+    color:#000000;
   }
   h1{
     font-size: 4em;
@@ -220,4 +226,5 @@ const Main = styled.div`
   display: flex;
   justify-content: center;
   background: #f9f9f9;
+  /*background-image: linear-gradient(120deg, #ffffff 10%, #dadada 100%);*/
 `;
