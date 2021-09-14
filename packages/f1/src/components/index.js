@@ -123,6 +123,9 @@ const globalStyles = css`
   ul{
     margin-bottom: 1.5rem!important;
   }
+  figure{
+    max-width: 500px!important;
+  }
   #root {
   //   display:flex;
   //   flex-direction: column;
