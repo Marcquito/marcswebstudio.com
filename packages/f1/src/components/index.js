@@ -127,8 +127,8 @@ const globalStyles = css`
     max-width: 500px!important;
   }
   figcaption{
-    display: block;
-    margin-top: 20px;
+    display: block!important;
+    margin-top: 20px!important;
     padding: 10px 0;
     background: #e8e8e8;
     border-left: 3px solid #667de9;
