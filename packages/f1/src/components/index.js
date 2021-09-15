@@ -126,6 +126,13 @@ const globalStyles = css`
   figure{
     max-width: 500px!important;
   }
+  figcaption{
+    display: block;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #e8e8e8;
+    border-left: 3px solid #667de9;
+  }
   #root {
   //   display:flex;
   //   flex-direction: column;
