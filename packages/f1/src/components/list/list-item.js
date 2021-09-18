@@ -92,7 +92,7 @@ const Article = styled.article`
   background: #333333;
   color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0px 15px 55px -20px #667eea;
+  /* box-shadow: 0px 15px 55px -20px #667eea; */
 
   .bio-info {
     margin-bottom:1rem;

@@ -18,6 +18,7 @@ const awsminF1 = {
      * relevant state. It is scoped to the `theme` namespace.
      */
     theme: {
+      mode: 'light',
       menu: [],
       isMobileMenuOpen: false,
       featured: {
@@ -38,6 +39,12 @@ const awsminF1 = {
       closeMobileMenu: ({ state }) => {
         state.theme.isMobileMenuOpen = false;
       },
+      lightMode: ({state}) => {
+        state.theme.mode = 'light';
+      },
+      darkMode: ({state}) => {
+        state.theme.mode = 'dark';
+      }
     },
   },
   libraries: {

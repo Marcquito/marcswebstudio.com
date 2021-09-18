@@ -27,6 +27,7 @@
     "@react-icons/all-files": "^4.1.0",
     "frontity": "^1.17.0",
     "hamburger-react": "^2.4.1",
+    "react-icons-kit": "^2.0.0",
     "react-particles-js": "^3.5.3",
     "react-useanimations": "^2.0.6"
   }

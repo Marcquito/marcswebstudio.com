@@ -22,6 +22,7 @@ import gutenbergTheme from "./styles/gutenberg/theme.css";
 const Theme = ({ state }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
+  const { mode } = state.theme;
 
   return (
     <>
@@ -38,6 +39,12 @@ const Theme = ({ state }) => {
       <Global styles={css(gutenbergStyle)} />
       <Global styles={css(gutenbergTheme)} />
       <Global styles={globalStyles} />
+      <Global styles={css`
+                body {
+                    background: ${mode === 'light' ? '#f9f9f9' : '#191919'};
+                    color: ${mode === 'light' ? '#191919' : '#f9f9f9'};
+                }
+                `} />
 
       {/* Add the header of the site. */}
       <HeadContainer>
@@ -241,6 +248,6 @@ const FooterContainer = styled.div`
 const Main = styled.div`
   display: flex;
   justify-content: center;
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
   /*background-image: linear-gradient(120deg, #ffffff 10%, #dadada 100%);*/
 `;

@@ -1,6 +1,7 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "../link";
+import ToggleMode from "../toggle-mode";
 
 /**
  * Navigation Component
@@ -21,6 +22,7 @@ const Nav = ({ state }) => (
         </NavItem>
       );
     })}
+    <ToggleMode />
   </NavContainer>
 );
 
@@ -31,7 +33,7 @@ const NavContainer = styled.nav`
   display: flex;
   max-width: 100%;
   box-sizing: border-box;
-  padding: 25px;
+  padding: 25px 0 0;
   margin: 0;
   overflow-x: auto;
 
