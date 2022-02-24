@@ -40,14 +40,29 @@ const Theme = ({ state }) => {
       <Global styles={css(gutenbergTheme)} />
       <Global styles={globalStyles} />
       <Global styles={css`
-                body {
-                    background: ${mode === 'light' ? '#f9f9f9' : '#191919'};
-                    color: ${mode === 'light' ? '#191919' : '#f9f9f9'};
-                }
-                `} />
+
+        body {
+            background: ${mode === 'light' ? '#f9f9f9' : '#191919'};
+            color: ${mode === 'light' ? '#191919' : '#f9f9f9'};
+        }
+        h3, h4{
+          color: ${mode === 'light' ? '#191919' : '#f9f9f9'};
+        }
+        .head-container{
+          background: ${mode === 'light' ? '#f9f9f9eb' : '#000000eb'};
+          color: ${mode === 'light' ? '#191919' : '#f9f9f9'};
+        }
+        .head-container nav a{
+          color: ${mode === 'light' ? '#191919' : '#f9f9f9'};
+        }
+        .head-container nav a:hover{
+          color: ${mode === 'light' ? 'var(--mwsblue);' : 'var(--mwsblue);'};
+        }
+        
+      `} />
 
       {/* Add the header of the site. */}
-      <HeadContainer>
+      <HeadContainer className="head-container">
         <Header />
       </HeadContainer>
       
@@ -235,7 +250,7 @@ const HeadContainer = styled.div`
 
   position: fixed;
   z-index: 999;
-  background: rgb(255 255 255 / 90%);
+  /* background: rgb(255 255 255 / 90%); */
 
 `;
 const FooterContainer = styled.div`

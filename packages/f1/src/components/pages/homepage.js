@@ -28,9 +28,10 @@ const HomePage = ({ state, actions, libraries }) => {
         <div className="container">
           <div className="col-lg-8">
             <h1>Hi, I'm Marc R. Miller</h1>
-            <h2>The finest rogue web developer, designer, and marketing extraordinaire based out of Atlanta, GA 👨🏻‍💻</h2>
+            <h2>Your personal web developer, designer, marketer, and project manager based out of Atlanta, GA 👨🏻‍💻</h2>
             <br />
-            <a href="/portfolio/" className="btn-blue">View Portfolio</a>
+            <a href="/portfolio/" className="btn btn-blue">View Portfolio</a>
+            <a href="#" className="btn btn-transparent">Client Portal</a>
             <br />
           </div>
         </div>
@@ -117,8 +118,12 @@ position:relative;
   }
 }
 
+.btn{
+  margin: 2px!important;
+}
 .btn-blue{
   background: #667eea;
+  border: 1px solid white;
   color: white;
   padding: 10px 20px;
   border-radius: 100px;
@@ -126,6 +131,19 @@ position:relative;
 }
 .btn-blue:hover{
   background: transparent;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.btn-transparent{
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 100px;
+  margin: 20px 0;
+}
+.btn-transparent:hover{
+  background: #667eea;
   transition: 0.2s;
   transition-timing-function: ease-in-out;
 }

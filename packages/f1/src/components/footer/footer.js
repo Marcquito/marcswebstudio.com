@@ -46,11 +46,13 @@ const Footer = ({ state }) => {
             <h4 className="widget-title">About Me</h4>
             <img className="about-me-image" src="https://admin.marcswebstudio.com/wp-content/uploads/2021/07/marcandenzo.jpg"></img>
             <p>
-              <strong>My name is Marc R. Miller and I'm a full-stack web developer based out of Atlanta, GA.</strong><br />
+              <strong>My name is Marc R. Miller and I'm a front-end web developer based out of Atlanta, GA.</strong><br />
               <br />
-              By day I work as the lead developer, project manager, and general go-to guy at <a target="_blank" href="https://multiversemediagroup.com">Multiverse Media Group</a>. 
-              By night, I enjoy working on everything from web development, to UI/UX design, photo/video editing, and dabbling in new and exciting technologies. <br />Non-work related interests include traveling, drinking beer and coffee, spending time with my awesome boi Enzo, and just enjoying what's out there.
-              Want to know more? <a href="/about/">Read on...</a>
+              By day I work as a WordPress developer and project manager for an Atlanta based development agency. By night I work and play as a mostly-everything-if-I-can-figure-it-out developer, 
+              designer, crafter of UI/UX design, marketer, semi-okay phtoto editor, and dabbling in new and exciting technologies.<br/>
+              Non-work related things I enjoy are reading books, hiking, watersports, traveling as much as possible, enjoying the view, drinking tons of coffee, gaming late at night, 
+              and spending time with my sidekick Enzo.<br/>
+              Interested in more about me? <a href="/about/">Feel free to read on...</a>
             </p>
           </div>
           <div className="col-lg-3 col-md-6 footer-widget widget-two">
@@ -59,7 +61,7 @@ const Footer = ({ state }) => {
               <li><Link className="widget-list-link" link="/about/">About Me</Link></li>
               <li><Link className="widget-list-link" link="/portfolio/">My Portfolio</Link></li>
               <li><Link className="widget-list-link" link="/blog/">Blog</Link></li>
-              <li><Link className="widget-list-link" link="https://marcswebstudio.com/pancake/">Client Login</Link></li>
+              <li><Link className="widget-list-link" link="https://projects.marcswebstudio.com/client" target="_blank">Client Portal</Link></li>
               <li><Link className="widget-list-link" link="/contact/">Contact</Link></li>
             </ul>
           </div>

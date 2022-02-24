@@ -57,7 +57,7 @@ const NavItem = styled.div`
     transition: all 0.3s ease;
     /* Use for semantic approach to style the current link */
     &[aria-current="page"] {
-      color:var(--brand);
+      color: var(--mwsblue);
     }
     &:hover {
       color:var(--brand);
