@@ -31,7 +31,7 @@ const HomePage = ({ state, actions, libraries }) => {
             <h2>Your personal web developer, designer, marketer, and project manager based out of Atlanta, GA 👨🏻‍💻</h2>
             <br />
             <a href="/portfolio/" className="btn btn-blue">View Portfolio</a>
-            <a href="#" className="btn btn-transparent">Client Portal</a>
+            <a href="https://projects.marcswebstudio.com/client/" className="btn btn-transparent" target="_blank">Client Portal</a>
             <br />
           </div>
         </div>
