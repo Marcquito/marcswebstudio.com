@@ -88,6 +88,7 @@ const settings = {
       },
     },
     "@aamodtgroup/frontity-gravity-forms",
+    "@frontity/yoast",
     "@frontity/tiny-router",
     "@frontity/html2react"
   ]
